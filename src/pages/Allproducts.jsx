@@ -89,15 +89,15 @@ function AllProducts() {
 
           <div className="flex flex-wrap -m-4 mb-5">
             {product.filter((obj) => obj.title.toLowerCase().includes(searchkey))
-              .filter((obj) => obj.category.toLowerCase().includes(filterType))
+              // .filter((obj) => obj.category.toLowerCase().includes(filterType))
               .filter((obj) => obj.price.includes(filterPrice))
               .map((item, index) => {
                 return (
                   <>
-                    <div className="p-4 md:w-1/3 drop-shadow-lg " key={index}>
+                    <div className="p-4 md:w-1/3 lg:w-1/4 drop-shadow-lg " key={index}>
                       <div className="h-full border-2 hover:shadow-gray-100 hover:shadow-md transition-shadow duration-300 ease-in-out bg-gray-100    border-gray-200 border-opacity-60 rounded-2xl overflow-hidden" style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }} >
                         <div className="flex justify-center cursor-pointer" onClick={() => navigate(`/productinfo/${item.id}`)}>
-                          <img className=" rounded-2xl lg:w-56 md:w-56 w-full p-2 hover:scale-110 transition-scale-110  duration-300 ease-in-out" src={item.imageUrl} alt="blog" />
+                          <img className="  w-full hover:scale-110 transition-scale-110  duration-300 ease-in-out" src={item.imageUrl} alt="blog" />
                         </div>
                         <div className="p-5 border-t-2">
                           <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1" style={{ color: mode === 'dark' ? 'white' : '', }}>Paudha</h2>

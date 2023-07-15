@@ -86,12 +86,10 @@ function Home() {
   return (
     <Layout loading={loading}>
       <Hero />
-
-
       <ThreeBox />
       <TopCategory />
-      <Filter searchkey={searchkey} setSearchkey={setSearchkey} filterType={filterType} setFilterType={setFilterType}
-        filterPrice={filterPrice} setFilterPrice={setFilterPrice} />
+      {/* <Filter searchkey={searchkey} setSearchkey={setSearchkey} filterType={filterType} setFilterType={setFilterType}
+        filterPrice={filterPrice} setFilterPrice={setFilterPrice} /> */}
       {/* <TrendingProduct/> */}
       {/* <Category /> */}
 

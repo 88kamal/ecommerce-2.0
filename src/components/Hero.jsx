@@ -99,7 +99,7 @@ import Carousels from './Carousels'
 
 function Hero() {
   return (      
-    <div className=' main    mb-8 lg:mb-0 md:mb-8 bg-[url(img/main-banner-bg.jpg)] lg:w-[50%] lg:h-[48em] bg-no-repeat md:w-[50%] md:h-[27em] w-[50%] h-[13.3em]' >
+    <div className=' main    mb-8 lg:mb-0 md:mb-8 bg-[url(/img/main-banner-bg.jpg)] lg:w-[50%] lg:h-[48em] bg-no-repeat md:w-[50%] md:h-[27em] w-[50%] h-[13.3em]' >
       <div className=" absolute lg:p-8 md:p-5 p-2">
       <Carousels/>
       </div>
